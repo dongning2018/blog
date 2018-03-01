@@ -1,0 +1,246 @@
+/*
+ * Globals
+ */
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  margin-bottom:25px;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+  /*top: 5px;*/
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active , .router-link-active{
+  color: #fff;
+}
+.blog-nav .active:after, .blog-nav .router-link-active:after{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /*top: 40px;*/
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+/*
+ * Main column and sidebar layout
+ */
+
+.blog-main {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.post {
+  margin-bottom: 40px;
+}
+
+.post-title {
+  border: 1px solid #EEEEEE;
+  border-width: 1px 0;
+  padding: 5px 0;
+}
+
+.post-abstract {
+  margin-bottom: 10px;
+}
+
+.post-meta {
+  font-size: 0.75em;
+}
+
+.post-meta > span {
+  display: inline-block;
+  padding-right: 10px;
+  margin: 0 5px;
+  border-right: 1px dotted #DDDDDD;
+}
+
+.post-meta > span:first-of-type {
+  margin-left: 0;
+}
+
+.post-meta > span:last-of-type {
+  margin-right: 0;
+  border-right: 0;
+}
+
+.post-meta > span a{
+  text-decoration: none;
+}
+
+.post-view-header {
+  text-align: center;
+}
+
+.post-view .post-meta {
+  border-bottom: 1px dotted #DDDDDD;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.post-view .post-content {
+  text-indent: 2em;
+  text-align: justify;
+}
+
+.post-comments,
+.post-comment-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.post-comment-item {
+  border: 1px dotted #DDDDDD;
+  padding: 10px;
+}
+.post-comment-list{
+  border: 1px dotted #DDDDDD;
+  margin-bottom: 15px;
+  padding:0;
+  list-style:none
+}
+.post-comment-list li{
+  border-bottom: 1px dotted #DDDDDD;
+}
+.post-comment-email{
+  border-bottom: 1px dotted #DDDDDD;
+  padding:10px;
+  margin-bottom:0;
+  font-size: 14px;
+  background: #f1f1f1;
+}
+.post-comment-content{
+  padding:10px;
+  margin-bottom:0;
+  font-size: 14px;
+}
+.alert-info{
+  font-size: 12px;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}

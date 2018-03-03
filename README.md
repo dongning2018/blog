@@ -23,12 +23,12 @@
 * nodemon
 
 ### 下载
-* git clone
+* git clone https://github.com/dongning2018/blog.git
 
 ### 安装
-* 安装项目依赖包 npm install
+* 安装依赖包 npm install
 * 将dn.sql导入mysql数据库中
-* server/api配置数据库
+* 修改server/api文件中对mysql配置
 
 ### 运行
 * 前端服务 npm run dev

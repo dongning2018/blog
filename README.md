@@ -1,5 +1,5 @@
 ## Blog
-使用vue、webpack、express、mysql开发的例子
+使用vue+express+mysql开发的例子
 
 ### 前端
 * vue
@@ -22,8 +22,10 @@
 * token
 * nodemon
 
+### 下载
+* git clone
+
 ### 安装
-* 克隆项目
 * 安装项目依赖包 npm install
 * 将dn.sql导入mysql数据库中
 * server/api配置数据库

@@ -23,7 +23,7 @@
 * nodemon
 
 ### 下载
-* git clone https://github.com/dongning2018/blog.git
+* git clone ```https://github.com/dongning2018/blog.git```
 
 ### 安装
 * 安装依赖包 npm install
@@ -33,4 +33,4 @@
 ### 运行
 * 前端服务 npm run dev
 * 后端服务 npm run server
-* 浏览器中访问 http://localhost:5000
+* 浏览器中访问 ```http://localhost:5000```

@@ -4,7 +4,9 @@ import Vuelidate from 'vuelidate'
 import Notifications from 'vue-notification'
 
 import App from 'src/App'
-import rest from 'src/rest'
+import Rest from 'src/rest'
+import Event from 'src/event'
+import NProgress from 'nprogress'
 
 import login from 'components/Login'
 import reg from 'components/Reg'
@@ -24,7 +26,10 @@ import resetPassword from 'components/ResetPassword'
 Vue.use(VueRouter)
 Vue.use(Vuelidate)
 Vue.use(Notifications)
-Vue.prototype.$http = rest
+Vue.prototype.$http = Rest
+Vue.prototype.$nprogress = NProgress
+
+export const emitter = new Event()
 
 //routes config
 const routes = [
@@ -87,6 +92,15 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes
+})
+
+router.beforeEach((to, from, next) => {
+  emitter.emit('start')
+  next()
+})
+
+router.afterEach(() => {
+  emitter.emit('stop')
 })
 
 //bind and render
